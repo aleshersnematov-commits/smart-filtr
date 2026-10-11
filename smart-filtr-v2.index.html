@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="uz" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Smart Filtr System — Pitch Day 3.0</title>
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<style>
+:root{--bg:#020617;--card:#0f172a99;--bd:#1e293b;--tx:#e2e8f0;--mu:#94a3b8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(5rem + env(safe-area-inset-top,0px))}
+body{background:var(--bg);color:var(--tx);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.hero{background:radial-gradient(circle at 50% 20%,rgba(14,165,233,.18),#020617 75%)}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:1rem;padding:1.5rem}
+.mu{color:var(--mu)} .tag{font-size:10px;background:#1e293b;padding:2px 8px;border-radius:6px}
+.h2{font-size:.75rem;letter-spacing:.15em;text-transform:uppercase;color:#22d3ee;font-weight:600;text-align:center}
+.h3{font-size:1.75rem;font-weight:700;text-align:center;margin:.25rem 0 2.5rem}
+pre{overflow-x:auto;background:#0b1220;border:1px solid var(--bd);border-radius:.75rem;padding:1rem;font-size:12px}
+.btn{padding:.6rem 1.2rem;border-radius:.6rem;font-weight:600;font-size:.9rem;cursor:pointer;display:inline-block}
+.p{background:#22d3ee;color:#020617}.s{border:1px solid #334155;color:#cbd5e1}
+</style>
+</head>
+<body>
+<header class="sticky top-0 z-50 backdrop-blur bg-slate-950/80 border-b border-slate-800" style="top:env(safe-area-inset-top,0px)">
+ <div class="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+  <a href="#/" class="font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">💧 Smart Filtr System</a>
+  <nav class="hidden md:flex gap-5 text-sm mu">
+   <a href="#/" data-s="problem">Muammo</a><a href="#/" data-s="team">Jamoa</a><a href="#/" data-s="why">Nega biz?</a><a href="#/" data-s="roadmap">Yo‘l xaritasi</a><a href="#/" data-s="tech">Sensorlar & AI</a><a href="#/" data-s="api">API</a><a href="#/" data-s="status">Holat</a>
+  </nav>
+  <a href="#/demo" class="btn p !py-1.5">/demo</a>
+ </div>
+</header>
+
+<main id="home">
+<section class="hero text-center px-5 py-20 border-b border-slate-900">
+ <div class="max-w-3xl mx-auto">
+  <span class="tag !text-cyan-400 !bg-cyan-500/10 border border-cyan-500/20">✨ Pitch Day 3.0 — 1-bosqich</span>
+  <h1 class="text-4xl md:text-6xl font-extrabold mt-5 mb-5">Kanal o‘zini o‘zi tozalaydi — <span class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">suv esa behuda ketmaydi</span></h1>
+  <p class="mu text-lg mb-8">To‘lqinsimon kanal profili, servo-zatvor, shag‘al-gubkali filtr va <b>Multi-Sensor Fusion AI</b> (sath, harorat, tovush, namlik) bilan boshqariladigan avtomatlashgan gidro-stend.</p>
+  <a href="#/demo" class="btn p">▶ /demo — Stend namoyishi</a> <a href="#tech" class="btn s">AI tahlil mexanizmi</a>
+ </div>
+</section>
+
+<section id="problem" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">1 · Muammo → Yechim</div><div class="h3">Muammo va innovatsion yechim</div>
+ <div class="grid md:grid-cols-2 gap-5">
+  <div class="card" style="border-color:#ef444433"><h4 class="font-bold text-lg mb-3">⚠️ Irrigatsiya muammolari</h4><div class="space-y-3 text-sm mu">
+   <p><b class="text-red-300">1. Loyqa va cho‘kindi:</b> tekis kanalda oqim sustlashib, loyqa tubga cho‘kadi va o‘tkazuvchanlik pasayadi.</p>
+   <p><b class="text-red-300">2. Kechikkan nazorat:</b> tiqilish ko‘pincha faqat suv toshganda bilinadi; harorat va biologik o‘tlar ta'siri kuzatilmaydi.</p>
+   <p><b class="text-red-300">3. Qimmat tozalash va suv isrofi:</b> qo‘lda yoki og‘ir texnika bilan tozalash qimmat, tiqilish paytida suv toshib behuda ketadi.</p></div></div>
+  <div class="card" style="border-color:#22d3ee44"><h4 class="font-bold text-lg mb-3">✅ Smart Filtr System yechimi</h4><div class="space-y-3 text-sm mu">
+   <p><b class="text-cyan-300">1. O‘z-o‘zini tozalovchi relyef:</b> to‘lqinsimon (tishli) tub sun'iy girdob hosil qilib, loyqa cho‘kishiga yo‘l qo‘ymaydi.</p>
+   <p><b class="text-cyan-300">2. Servo-zatvor va 2 bosqichli filtr:</b> shag‘al (yirik zarrachalar) va gubka (mayda loyqa).</p>
+   <p><b class="text-cyan-300">3. Sensorlar + AI bashorat:</b> sath, tovush, harorat va namlik ma'lumotlari birlashtirilib, avariya oldindan aniqlanadi.</p></div></div>
+ </div>
+</section>
+
+<section id="team" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">2 · Jamoa</div><div class="h3">Rollar, ko‘nikmalar, texnologiyalar, havolalar</div>
+ <div id="teamGrid" class="grid md:grid-cols-3 gap-5"></div>
+</section>
+
+<section id="why" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">3 · Nima uchun biz?</div><div class="h3">Nima uchun jamoamiz bu muammoni hal qila oladi?</div>
+ <div class="grid md:grid-cols-3 gap-5">
+  <div class="card"><div class="text-3xl mb-2">💧</div><h4 class="font-semibold mb-1">Gidromuhandislik bazasi</h4><p class="mu text-sm">TIIAME’da kanal gidravlikasi, haroratning qovushqoqlikka ta'siri va oqim kinematikasini nazariy hamda laboratoriyada o‘rganamiz.</p></div>
+  <div class="card"><div class="text-3xl mb-2">🔨</div><h4 class="font-semibold mb-1">Ishlaydigan fizik model</h4><p class="mu text-sm">Relyefli profil, servo-zatvor, shag‘al-gubkali filtr kassetasi va datchiklar o‘rnatilgan haqiqiy stend mavjud.</p></div>
+  <div class="card"><div class="text-3xl mb-2">🧠</div><h4 class="font-semibold mb-1">Ko‘p sensorli AI</h4><p class="mu text-sm">Harorat, shovqin, sath va namlikni yaxlit model sifatida birlashtirib, xavfni erta bashorat qiluvchi tizim yaratmoqdamiz.</p></div>
+ </div>
+</section>
+
+<section id="roadmap" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">4 · Yo‘l xaritasi</div><div class="h3">Idea → Prototype → MVP → Launched</div>
+ <div id="road" class="grid md:grid-cols-4 gap-5"></div>
+</section>
+
+<section id="tech" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">5 · Amalga oshirish</div><div class="h3">Sensorlar, AI Fusion, bosqichlar va texnologiyalar</div>
+ <div class="grid md:grid-cols-4 gap-4 mb-8">
+  <div class="card !p-4"><b class="text-cyan-400 text-xs">1. SUV SATHI</b><p class="mu text-xs mt-2">To‘siq oldidagi suv balandligi va ko‘tarilish tezligi: tiqilish boshlanishini ko‘rsatadi.</p></div>
+  <div class="card !p-4"><b class="text-amber-400 text-xs">2. HARORAT (DS18B20)</b><p class="mu text-xs mt-2">Qovushqoqlik, cho‘kish tezligi va o‘tlar ko‘payishiga ta'sirni hisobga oladi.</p></div>
+  <div class="card !p-4"><b class="text-purple-400 text-xs">3. AKUSTIK</b><p class="mu text-xs mt-2">Oqim shovqin spektri: tiqilish yoki girdob (kavitatsiya) boshlanishini tutadi.</p></div>
+  <div class="card !p-4"><b class="text-emerald-400 text-xs">4. TUPROQ NAMLIGI</b><p class="mu text-xs mt-2">Qirg‘oq va filtratsiyadan sizishni o‘lchaydi, sug‘orish bilan bog‘laydi.</p></div>
+ </div>
+ <div class="card mb-8" style="border-color:#22d3ee55"><h4 class="font-bold text-lg mb-2">🧠 Multi-Sensor Fusion AI</h4>
+  <p class="mu text-sm mb-3">Datchiklar alohida emas, birgalikda baholanadi. Har bir signal 0–1 ga normallashtirilib, umumiy <b>xavf indeksi</b> hisoblanadi, so‘ng zatvor va filtr harakati tanlanadi.</p>
+<pre>risk = 0.35·sath_o‘sishi + 0.30·akustik_anomaliya
+     + 0.20·harorat_omili + 0.15·sizish(namlik)
+
+risk &lt; 0.4  → Normal (kuzatuv)
+0.4–0.7    → Ogohlantirish, filtr tozalash sikli
+&gt; 0.7       → Zatvor ochiladi, chiqindi rezervuariga, signal</pre>
+  <p class="mu text-xs mt-2">Koeffitsientlar boshlang‘ich qiymatlar; stenddan yig‘ilgan ma'lumot asosida (Random Forest / Isolation Forest, scikit-learn) kalibrlanadi.</p></div>
+ <div class="grid md:grid-cols-3 gap-5">
+  <div class="card"><h4 class="font-bold text-cyan-400 mb-2">🔌 Hardware</h4><p class="mu text-sm mb-3">ESP32, sath, harorat, akustik va namlik datchiklari, servo-privod, shag‘al-gubka filtr.</p><span class="tag">ESP32 · DS18B20 · Servo · Relay</span></div>
+  <div class="card"><h4 class="font-bold text-blue-400 mb-2">🧱 Software</h4><p class="mu text-sm mb-3">C++ firmware; MQTT/WebSocket orqali FastAPI serveriga; veb-dashboard real vaqtda ko‘rsatadi.</p><span class="tag">C++ · Python · FastAPI · MQTT</span></div>
+  <div class="card"><h4 class="font-bold text-emerald-400 mb-2">🧠 AI</h4><p class="mu text-sm mb-3">Vaqt qatori bashorati va anomaliya aniqlash; xavf indeksi bo‘yicha avtomatik qaror.</p><span class="tag">Scikit-learn · Time-series</span></div>
+ </div>
+ <ol class="mt-6 grid md:grid-cols-4 gap-3 text-sm">
+  <li class="card !p-4"><b class="text-cyan-400">1.</b> Stend va datchiklar kalibrovkasi</li>
+  <li class="card !p-4"><b class="text-cyan-400">2.</b> Avto-zatvor va telemetriya</li>
+  <li class="card !p-4"><b class="text-cyan-400">3.</b> Fusion AI va dashboard</li>
+  <li class="card !p-4"><b class="text-cyan-400">4.</b> Dala sinovi, GSM/LoRa</li>
+ </ol>
+</section>
+
+<section id="api" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">Bonus</div><div class="h3">API Access & AI-chatbot</div>
+ <div class="grid md:grid-cols-2 gap-5">
+  <div class="card"><h4 class="font-bold mb-2">📡 API spetsifikatsiyasi</h4>
+<pre>POST /api/v1/telemetry
+Authorization: Bearer &lt;DEVICE_KEY&gt;
+{ "device_id": "stend-01",
+  "level_cm": 42.5, "water_temp_c": 18.4,
+  "acoustic_db": 54, "soil_moisture_pct": 31,
+  "gate_open_pct": 60,
+  "ts": "2026-10-11T12:00:00+05:00" }
+
+GET /api/v1/risk?device_id=stend-01
+→ { "risk": 0.27, "state": "normal" }</pre>
+  <p class="mu text-xs mt-2">Spetsifikatsiya; serverga ulash yakuniy bosqichda.</p></div>
+  <div class="card"><h4 class="font-bold mb-2">🤖 AI yordamchi</h4>
+   <div id="chat" class="h-52 overflow-y-auto space-y-2 text-sm mb-3"></div>
+   <div id="chips" class="flex flex-wrap gap-2 mb-3"></div>
+   <div class="flex gap-2"><input id="q" class="flex-1 bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-sm" placeholder="Savol yozing..."><button id="send" class="btn p !py-2">Yuborish</button></div></div>
+ </div>
+</section>
+
+<section id="status" class="max-w-6xl mx-auto px-5 py-16">
+ <div class="h2">Joriy holat</div><div class="h3">Loyiha hozir qaysi bosqichda?</div>
+ <div class="grid md:grid-cols-3 gap-5">
+  <div class="card"><div class="flex justify-between text-sm mb-2"><b>🔌 Hardware</b><span class="text-emerald-400">Tugallangan</span></div><div class="h-2 bg-slate-800 rounded"><div class="h-2 rounded bg-emerald-400" style="width:100%"></div></div><p class="mu text-xs mt-2">Stend, kanal profili, zatvor, filtr va datchiklar tayyor.</p></div>
+  <div class="card"><div class="flex justify-between text-sm mb-2"><b>🎨 Dizayn</b><span class="text-amber-400">Jarayonda</span></div><div class="h-2 bg-slate-800 rounded"><div class="h-2 rounded bg-amber-400" style="width:60%"></div></div><p class="mu text-xs mt-2">Stend korpusi, dashboard va taqdimot dizayni ustida ishlanmoqda.</p></div>
+  <div class="card"><div class="flex justify-between text-sm mb-2"><b>💻 Software & AI</b><span class="text-cyan-400">Yakunlanmoqda</span></div><div class="h-2 bg-slate-800 rounded"><div class="h-2 rounded bg-cyan-400" style="width:90%"></div></div><p class="mu text-xs mt-2">Firmware va AI integratsiyasi deyarli tayyor; yakuniy sinovlar qoldi.</p></div>
+ </div>
+</section>
+</main>
+
+<main id="demo" class="hidden max-w-5xl mx-auto px-5 py-12">
+ <a href="#/" class="mu text-sm">← Bosh sahifa</a>
+ <h1 class="text-3xl font-extrabold mt-3 mb-6">/demo — Smart Filtr System</h1>
+ <h2 class="font-bold text-lg mb-2">6.1 Demo-video</h2>
+ <div class="card text-center py-14"><div class="text-5xl mb-3">🎬</div><p class="mu text-sm mb-4">Video tashqi platformada (YouTube) joylashgan.</p><a id="vidLink" href="#" target="_blank" rel="noopener" class="btn p">▶ Videoni ko‘rish</a></div>
+ <h2 class="font-bold text-lg mt-8 mb-2">6.2 Video tavsifi</h2>
+ <div class="card mu text-sm space-y-2">
+  <p>Videoda kanal muammosi (loyqa, tiqilish) va uni hal qiluvchi <b class="text-white">Smart Filtr System</b> stendi ko‘rsatiladi.</p>
+  <p>• Muammo: cho‘kindi, kechikkan nazorat, suv isrofi.</p>
+  <p>• Stend: to‘lqinsimon kanal, servo-zatvor, shag‘al-gubkali filtr, 4 turdagi datchik.</p>
+  <p>• Ishlash tartibi: sensorlar → Fusion AI xavf indeksi → zatvor va filtr harakati.</p>
+  <p>• Holat: hardware tayyor, software va AI yakunlanmoqda.</p>
+ </div>
+ <h2 class="font-bold text-lg mt-8 mb-2">6.3 Prototip</h2>
+ <div class="card mb-4">
+  <p class="mu text-sm mb-3">Fusion AI mantig‘ining brauzerdagi simulyatsiyasi. Datchik qiymatlarini o‘zgartiring:</p>
+  <div id="sl" class="grid sm:grid-cols-2 gap-4 text-sm"></div>
+  <div class="grid grid-cols-3 gap-3 text-center text-sm mt-4">
+   <div class="card !p-3"><div class="mu text-xs">Xavf indeksi</div><b id="rk">0.00</b></div>
+   <div class="card !p-3"><div class="mu text-xs">Holat</div><b id="st">Normal</b></div>
+   <div class="card !p-3"><div class="mu text-xs">Zatvor</div><b id="gt">0%</b></div>
+  </div>
+  <div class="h-3 bg-slate-800 rounded mt-4 overflow-hidden"><div id="bar" class="h-full bg-cyan-400" style="width:0"></div></div>
+ </div>
+ <a id="protoLink" href="#" target="_blank" rel="noopener" class="btn s">🔗 Prototip / GitHub havolasi</a>
+</main>
+<footer class="text-center mu text-xs py-8 border-t border-slate-900">Smart Filtr System · Pitch Day 3.0 · TIIAME</footer>
+
+<script>
+// ====== O'ZGARTIRING: haqiqiy havolalar ======
+var VIDEO_URL="https://youtube.com/shorts/M9xmPfzTWZU";      // demo-video havolasi
+var PROTO_URL="https://github.com/";        // prototip / repo havolasi
+// ============================================
+document.getElementById('vidLink').href=VIDEO_URL;document.getElementById('protoLink').href=PROTO_URL;
+var team=[
+["Alisher Nematov","Team Lead & Gidromuhandis","Gidrotexnika arxitekturasi, to‘lqinsimon profil hisobi, stend yig‘ilishi, AI konsepsiyasi.",["SolidWorks","AutoCAD","Hydraulics"],"#22d3ee"],
+["Shohjahon","Embedded & Sensor Dev","ESP32 firmware, sath/harorat/akustik/namlik datchiklari drayverlari, servo boshqaruvi.",["C/C++","Arduino IDE","Sensor Fusion"],"#60a5fa"],
+["Shohruzbek Ahmadjonov","Data & Presentation Dev","Telemetriya tahlili, ko‘p sensorli ma'lumot, AI vizualizatsiyasi.",["Python","Data Analytics","Web UI"],"#818cf8"]];
+document.getElementById('teamGrid').innerHTML=team.map(function(t){return '<div class="card text-center"><div class="w-16 h-16 rounded-full mx-auto mb-3 flex items-center justify-center text-2xl font-bold" style="border:1px solid '+t[4]+';color:'+t[4]+'">'+t[0][0]+'</div><h4 class="font-bold">'+t[0]+'</h4><p class="text-sm font-medium mb-2" style="color:'+t[4]+'">'+t[1]+'</p><p class="mu text-xs mb-3">'+t[2]+'</p><div class="flex flex-wrap justify-center gap-1 mb-3">'+t[3].map(function(s){return '<span class="tag">'+s+'</span>'}).join('')+'</div><a class="text-xs underline" style="color:'+t[4]+'" target="_blank" rel="noopener" href="https://github.com">GitHub →</a></div>'}).join('');
+var road=[["Idea","Tugallangan","#22d3ee",["✓ Kanal gidravlika hisoblari","✓ To‘lqinsimon relyef loyihasi","✓ Ko‘p sensorli arxitektura"]],["Prototype","● Hozirgi holat (laboratoriya)","#3b82f6",["✓ Kanal va servo-zatvor stendi","✓ Shag‘al-gubkali filtr","✓ Datchiklar sinovi","◐ Dizayn, software va AI yakunlanmoqda"]],["MVP","2026 Q4 (reja)","#64748b",["• Dala sinovi","• GSM/LoRa telemetriya","• Fusion AI ishga tushirish"]],["Launched","2027+","#475569",["• SCADA integratsiyasi","• Sanoat miqyosida o‘rnatish"]]];
+document.getElementById('road').innerHTML=road.map(function(r,i){return '<div class="card" style="border-top:4px solid '+r[2]+'"><span class="text-xs mu">Bosqich '+(i+1)+'</span><h4 class="text-xl font-bold">'+r[0]+'</h4><p class="text-xs mb-2" style="color:'+r[2]+'">'+r[1]+'</p><ul class="mu text-xs space-y-1">'+r[3].map(function(x){return '<li>'+x+'</li>'}).join('')+'</ul></div>'}).join('');
+
+// Routing (#/ va #/demo)
+function route(){var d=location.hash.indexOf('demo')>-1;document.getElementById('demo').classList.toggle('hidden',!d);document.getElementById('home').classList.toggle('hidden',d);window.scrollTo(0,0)}
+window.addEventListener('hashchange',route);route();
+document.querySelectorAll('[data-s]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();if(location.hash!=='#/')location.hash='#/';setTimeout(function(){document.getElementById(a.dataset.s).scrollIntoView({behavior:'smooth'})},50)})});
+
+// Fusion simulyatsiyasi
+var S=[["Suv sathi o‘sishi","lv",0,100,10,"%"],["Akustik anomaliya","ac",0,100,10,"%"],["Suv harorati","tp",5,35,18,"°C"],["Tuproq namligi","ml",0,100,30,"%"]];
+var sl=document.getElementById('sl');
+sl.innerHTML=S.map(function(x){return '<label>'+x[0]+': <b id="v_'+x[1]+'" class="text-cyan-400"></b><input id="i_'+x[1]+'" type="range" min="'+x[2]+'" max="'+x[3]+'" value="'+x[4]+'" class="w-full"></label>'}).join('');
+function sim(){var g=function(k){return +document.getElementById('i_'+k).value};
+S.forEach(function(x){document.getElementById('v_'+x[1]).textContent=g(x[1])+x[5]});
+var r=0.35*g('lv')/100+0.30*g('ac')/100+0.20*Math.max(0,Math.min(1,(g('tp')-20)/15))+0.15*g('ml')/100;
+document.getElementById('rk').textContent=r.toFixed(2);
+document.getElementById('st').textContent=r<0.4?'Normal':r<0.7?'Ogohlantirish':'Favqulodda';
+document.getElementById('gt').textContent=(r<0.4?0:r<0.7?30:100)+'%';document.getElementById('bar').style.width=Math.round(r*100)+'%'}
+S.forEach(function(x){document.getElementById('i_'+x[1]).addEventListener('input',sim)});sim();
+
+// Chatbot (qoidaga asoslangan)
+var kb=[
+[["muammo","problem","loyqa"],"Kanallarda loyqa cho‘kadi, tiqilish kech aniqlanadi va suv isrof bo‘ladi; tozalash qimmat."],
+[["qanday ishlaydi","ishlaydi","yechim"],"To‘lqinsimon kanal loyqa cho‘kishini kamaytiradi, servo-zatvor va shag‘al-gubkali filtr tozalaydi, sensorlar va AI esa tiqilishni oldindan aniqlaydi."],
+[["sensor","datchik"],"4 ta datchik: suv sathi, harorat (DS18B20), akustik (tovush) va tuproq namligi."],
+[["ai","fusion","bashorat","xavf"],"Fusion AI to‘rt datchik signalini 0–1 ga normallashtirib, xavf indeksi hisoblaydi va zatvor/filtr harakatini tanlaydi."],
+[["jamoa","kim","team"],"Alisher Nematov (Lead, gidromuhandis), Shohjahon (embedded va sensorlar), Shohruzbek Ahmadjonov (data va taqdimot)."],
+[["holat","status","tayyor"],"Hardware tayyor; dizayn ustida ishlanmoqda; software va AI integratsiyasi deyarli yakunlangan."],
+[["roadmap","yo‘l","mvp","bosqich"],"Idea tugagan, Prototype hozirgi bosqich, MVP — 2026 Q4, Launched — 2027+."],
+[["api","telemetriya"],"POST /api/v1/telemetry sensor qiymatlarini yuboradi; GET /api/v1/risk xavf indeksini qaytaradi."],
+[["texnologiya","esp32","stack"],"ESP32, C++, Python/FastAPI, MQTT, scikit-learn."]];
+var chat=document.getElementById('chat');
+function add(t,me){var d=document.createElement('div');d.className=me?'text-right':'';d.innerHTML='<span class="inline-block px-3 py-2 rounded-xl '+(me?'bg-cyan-500/20':'bg-slate-800')+'">'+t.replace(/</g,'&lt;')+'</span>';chat.appendChild(d);chat.scrollTop=chat.scrollHeight}
+function ask(q){if(!q.trim())return;add(q,1);var l=q.toLowerCase(),a="Bu savolga aniq javobim yo‘q. Muammo, yechim, jamoa, texnologiya, AI, roadmap yoki API haqida so‘rang.";kb.forEach(function(k){if(a.indexOf('aniq javobim')===3||a.indexOf('Bu savol')===0){k[0].forEach(function(w){if(l.indexOf(w)>-1)a=k[1]})}});setTimeout(function(){add(a,0)},250)}
+add("Salom! Loyiha haqida savol bering 👇",0);
+["Qanday ishlaydi?","Qanday sensorlar?","AI nima qiladi?","Loyiha holati?"].forEach(function(s){var b=document.createElement('button');b.className='tag !text-cyan-400';b.textContent=s;b.onclick=function(){ask(s)};document.getElementById('chips').appendChild(b)});
+document.getElementById('send').onclick=function(){var i=document.getElementById('q');ask(i.value);i.value=''};
+document.getElementById('q').addEventListener('keydown',function(e){if(e.key==='Enter'){ask(this.value);this.value=''}});
+</script>
+</body>
+</html>
